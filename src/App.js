@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import SingleDish from './SingleDish';
 
-class App extends Component  {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,11 +12,10 @@ class App extends Component  {
   
   
   render() {
-    const dishes = this.props.dishes;
     return (
       <div>
-        <h1>React Dish App {dishes}</h1> 
-        <SingleDish />
+        <h1>React Dish App </h1> 
+        <SingleDish dishes={this.state.dishes}/>
       </div>
     );
   }
