@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import SingleDish from './SingleDish';
+import Dish from './components/Dish';
+import AllDishes from './components/AllDishes';
 
 class App extends Component {
   constructor(props) {
@@ -9,13 +10,11 @@ class App extends Component {
       dishes: "fish"
     }
   }
-  
-  
   render() {
     return (
       <div>
-        <h1>React Dish App </h1> 
-        <SingleDish dishes={this.state.dishes}/>
+        <h1>React Menu App </h1> 
+       <AllDishes/>
       </div>
     );
   }
