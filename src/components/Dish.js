@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 
-const Dish = (props) => {
-
-    return (
-        <div>
-            Dish
-            <li>
-                {props.dishes}
-            </li>
-        </div>
-
-    );
+class Dish extends Component {
+    render(){
+        return (
+            <div>
+                Dish
+                <li>
+                    {this.props.dishes}
+                </li>
+            </div>
+        );
+    }
 }
 
 export default Dish;

@@ -10,6 +10,7 @@ class App extends Component {
       dishes: "fish"
     }
   }
+  
   render() {
     return (
       <div>
